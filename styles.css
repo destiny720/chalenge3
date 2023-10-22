@@ -35,7 +35,7 @@ header a:hover {
     justify-content: space-between;
     align-items: center;
 }
-.header-menu {
+.header-menus {
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -44,13 +44,13 @@ header a:hover {
 }
 .header-tab {
     display: flex;
+    flex-direction: row;
     align-items: center;
     flex-wrap: nowrap;
     gap: 0.3rem;
 }
 .header-arrow {
     width: 10px;
-    height: 7px;
     transform: rotate(0deg);
     transition: transform 250ms ease;
 }
@@ -66,13 +66,13 @@ header a:hover {
     display: flex;
     flex-direction: column;
     text-align: left;
-    gap: 0.5rem;
-   
+    opacity: 0.8;
+    gap: 0.5em;
     position: absolute;
     background-color: hsl(0, 0%, 100%);
     border-radius: 0.5rem;
     padding: 1rem;
-    min-width: 8rem;
+    min-width: 5rem;
     margin-top: 1rem;
     z-index: 1;
 }
@@ -205,7 +205,7 @@ header a:hover {
     border-radius: 0.5rem;
 }
 .mobile-submenu a {
-    color: hsl(208, 49%, 24%);
+    color: hsl(0, 0%, 100%);
     font-weight: bold;
     opacity: 0.7;
 }
@@ -268,8 +268,8 @@ header a:hover {
 }
 
 #info-1 {
-    background-color: var(--white);
-    color: var(--very-dark-grayish-blue);
+    background-color:hsl(0, 0%, 100%);
+    color: hsl(207, 13%, 34%);
     font-family: "Overpass", sans-serif;
 
     padding: 8rem;
@@ -284,7 +284,7 @@ header a:hover {
 }
 #info-1 h2,
 #info-1 h3 {
-    color: var(--very-dark-blue);
+    color: hsl(208, 49%, 24%);
 }
 #info-1 section h3 {
     margin-bottom: 2rem;
@@ -336,14 +336,23 @@ header a:hover {
         gap: 2rem;
         width: auto;
     }
+    .sign-up-btn,
+    .start-btn,
+    .learn-btn {
+    border-radius: 1.5rem;
+    white-space: nowrap;
+    font-family: "Overpass", sans-serif;
+    font-weight: 600;
+    transition: 0.5s;
+}
 }
 
 #info-2 {
-    background: url("./images/bg-pattern-circles.svg"), linear-gradient(to right, var(--very-dark-gray-blue), var(--very-dark-desaturated-blue));
+    background: url("./images/bg-pattern-circles.svg"), linear-gradient(to right,  hsl(237, 17%, 21%), hsl(237, 23%, 32%));
     background-repeat: no-repeat;
     background-position: -30% 85%;
     background-size: auto;
-    color: var(--white);
+    color: hsl(0, 0%, 100%);
     font-family: "Overpass", sans-serif;
 
     padding: 6rem 8rem;
@@ -395,8 +404,8 @@ header a:hover {
 }
 
 #info-3 {
-    background-color: var(--white);
-    color: var(--very-dark-grayish-blue);
+    background-color: hsl(0, 0%, 100%);
+    color: hsl(207, 13%, 34%);
     font-family: "Overpass", sans-serif;
 
     padding: 8rem;
@@ -406,7 +415,7 @@ header a:hover {
 }
 
 #info-3 h3 {
-    color: var(--very-dark-blue);
+    color: hsl(208, 49%, 24%);
     margin-bottom: 2rem;
     font-size: 1.5rem;
 }
@@ -457,8 +466,9 @@ header a:hover {
 }
 
 footer {
-    background-color: var(--very-dark-black-blue);
-    color: var(--white);
+    background-color: hsl(240, 10%, 16%)
+    ;
+    color: hsl(0, 0%, 100%);
     font-family: "Overpass", sans-serif;
     border-top-right-radius: 5rem;
 
@@ -466,7 +476,7 @@ footer {
 }
 footer a {
     text-decoration: none;
-    color: var(--white);
+    color: hsl(0, 0%, 100%);
 }
 footer a:hover {
     text-decoration: underline 2px;
